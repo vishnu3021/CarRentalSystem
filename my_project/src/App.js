@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
+import Image from 'react-bootstrap/Image';
 import Offcanvas from 'react-bootstrap/Offcanvas'; // For mobile Offcanvas menu
 
 // Import your custom components
@@ -29,7 +30,8 @@ function App() {
   const MobileNavbar = () => (
     <Navbar bg="primary" expand={false} sticky="top" className="mb-3" data-bs-theme="dark">
       <Container>
-        <Navbar.Brand as={Link} to="/">Type Something to Start</Navbar.Brand>
+        <Navbar.Brand as={Link} to="/"> 
+        Cая Яёптаг</Navbar.Brand>
         <Navbar.Toggle aria-controls="offcanvasNavbar" />
         <Navbar.Offcanvas id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel" placement="start">
           <Offcanvas.Header closeButton>
@@ -48,13 +50,16 @@ function App() {
   );
 
   const DesktopNavbar = () => (
-    <Navbar bg="primary" variant="dark" sticky="top" className="mb-3">
+    <Navbar  bg="dark" data-bs-theme="dark"  variant="dark" sticky="top" className="mb-3">
       <Container>
-        <Navbar.Brand as={Link} to="/">Type Something to Start</Navbar.Brand>
-        <Nav className="me-auto">
+        <Navbar.Brand as={Link} to="/">       
+        𝓒𝓪𝓻'𝓼 𝓡𝓮𝓷𝓽𝓪𝓵
+            </Navbar.Brand>
+        <Nav className="justify-content-center">
           <Nav.Link as={Link} to="/">Home</Nav.Link>
           <Nav.Link as={Link} to="/carrents">Car Rentals</Nav.Link>
           <Nav.Link as={Link} to="/rating">Ratings</Nav.Link>
+         
         </Nav>
       </Container>
     </Navbar>
