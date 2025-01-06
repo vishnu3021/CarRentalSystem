@@ -1,5 +1,7 @@
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
+import {Link } from 'react-router-dom';
+import "./Card.css";
 
 function Cards(props) {
   const cardStyle = {
@@ -19,10 +21,10 @@ function Cards(props) {
 
   return (
     <div>
-      <Card style={cardStyle}>
-        <Card.Img variant="top" src={props.image} />
-        <Card.Body style={cardBodyStyle}>
-          <Card.Title>Brand: {props.brand}<br></br>
+      <Card style={cardStyle} className="cardMain">
+        <Card.Img variant="top" src={props.image} className='image'  alt={`${props.brand} ${props.model}`}  />
+        <Card.Body style={cardBodyStyle} className='CardBody'>
+          <Card.Title>Brand :{props.BrandName}<br />
           Model: {props.model} <br />
           Type :{props.type}
           </Card.Title>
@@ -30,7 +32,9 @@ function Cards(props) {
             Some quick example text to build on the card title and make up the
             bulk of the card's content.
           </Card.Text>
-          <Button variant="primary">Go somewhere</Button>
+          {/* <Link to={`/cars/${props.brand}`}></Link> */}
+          <Link to ={`/carrents/${props.brand}`} style={{textDecoration:"none"}}>  <Button variant="primary">Go somewhere</Button></Link>
+         
         </Card.Body>
       </Card>
     </div>

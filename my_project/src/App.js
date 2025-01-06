@@ -9,6 +9,7 @@ import Offcanvas from 'react-bootstrap/Offcanvas'; // For mobile Offcanvas menu
 // Import your custom components
 import Home from './components/Home';
 import CarsData from './Vechical/CarsData';
+import Bookcar from './Vechical/Bookcar';
 
 function App() {
   const [isMobile, setIsMobile] = useState(false);
@@ -71,6 +72,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/carrents" element={<CarsData />} />
+        <Route path="/carrents/:id" element={<Bookcar/>}/>
         {/* <Route path="/rating" element={<Rating />} /> */}
       </Routes>
     </Router>
