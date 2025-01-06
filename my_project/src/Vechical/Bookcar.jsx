@@ -497,12 +497,7 @@ export default function Bookcar() {
       <h3>Price:{selectedVehicle.price}</h3>
       <br /><h3>Type:{selectedVehicle.type}</h3>
       {/* <img src={selectedVechicle.image} alt="Car Image" /> */}
-      <div style={{border:"2px solid red", height:"39vh", width:"33vh", display:"flex", justifyContent:"center"}}>
-      {/* <Col xs={6} md={2}>
-          <Image src="https://pbs.twimg.com/media/FylDILhaAAAkR_F.jpg" roundedCircle />
-        </Col> <br />
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, laudantium. Fugit quisquam rem magni incidunt cupiditate nesciu */}
-      </div>
+    
     </div>
   );
 }
