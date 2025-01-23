@@ -1,0 +1,45 @@
+img{
+    height: 95vh;
+    width: 80vh;
+}
+h5{
+    font-size: 1.5rem;
+    color: orange;
+   
+}
+.carintro{
+    font-size: 1.2rem;
+    color: blueviolet;
+}
+.img:hover{
+    transform: scale(1.1);
+    /* transform: translateY(5px); */
+}
+@media (min-width: 320px) {
+    /* CSS rules for screens wider than 720px */
+    img{
+        height: 95vh;
+        width: 80vh;
+    }
+    h5{
+        font-size: 1.5rem;
+        /* color: orange; */
+        /* background-color: brown; */
+       
+    }
+    .carintro{
+        font-size: 1.2rem;
+        color: orange;
+    }
+    .img:hover{
+        transform: scale(1.1);
+        /* transform: translateY(5px); */
+    }
+
+  }
+  @media (min-width: 768px) {
+    .carintro{
+        font-size: 1.2rem;
+        color: red;
+    }
+  }
