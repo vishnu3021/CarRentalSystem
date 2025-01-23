@@ -16,7 +16,7 @@ function OrderCard(props) {
     display: "flex",
     flexDirection: "column",
     justifyContent: "center",
-    // marginLeft: "9%",
+    marginLeft: "9%",
   };
 
   const cardBodyStyle = {
