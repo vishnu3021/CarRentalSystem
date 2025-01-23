@@ -4,7 +4,7 @@ import CardData from "../Vechical/CarsData"
 const HelpCenter = () => {
   return (
     <div id='help'>
-      <CardData/>
+      {/* <CardData/> */}
     </div>
   )
 }

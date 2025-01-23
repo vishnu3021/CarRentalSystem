@@ -2,10 +2,14 @@ import React from 'react';
 import { useState } from 'react';
 import Carousel from 'react-bootstrap/Carousel';
 // import ExampleCarouselImage from 'components/ExampleCarouselImage';
+// import Button from 'react-bootstrap/Button';
+// import Card from 'react-bootstrap/Card';
+// import {Link } from 'react-router-dom';
 
 export default function SelectedCar( props ) {
+  console.log(props.image)
     return (
-        <div>
+        <div >
             {/* <h2>Selected Car</h2> */}
             <Carousel data-bs-theme="dark">
       <Carousel.Item>
@@ -44,7 +48,8 @@ export default function SelectedCar( props ) {
         </Carousel.Caption>
       </Carousel.Item>
     </Carousel>
-            
+    {/* <Link to ={`/carrents/${props.brand}`} style={{textDecoration:"none"}}>  <Button variant="primary">Go somewhere</Button></Link> */}
+
         </div>
     );
 }

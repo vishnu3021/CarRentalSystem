@@ -10,7 +10,7 @@ function Home() {
     <Carousel data-bs-theme="primary">
       <Carousel.Item>
         <img
-          className='d-block w-100 img'
+          className='d-block h-100  w-100  img'
           src="https://media.autoexpress.co.uk/image/private/s--dsad6H7D--/v1562247060/autoexpress/2018/11/2twin.jpg"
           alt="First slide" height="10%"
         />

@@ -18,9 +18,10 @@ function Cards(props) {
     flexGrow: 1, // Ensures consistent spacing in the card body
     justifyContent: 'space-between',
   };
-
+  console.log(props.id)
   return (
     <div>
+
       <Card style={cardStyle} className="cardMain">
         <Card.Img variant="top" src={props.image} className='image'  alt={`${props.brand} ${props.model}`}  />
         <Card.Body style={cardBodyStyle} className='CardBody'>
@@ -33,7 +34,7 @@ function Cards(props) {
             bulk of the card's content.
           </Card.Text>
           {/* <Link to={`/cars/${props.brand}`}></Link> */}
-          <Link to ={`/carrents/${props.brand}`} style={{textDecoration:"none"}}>  <Button variant="primary">Go somewhere</Button></Link>
+          <Link to ={`/carrents/${props.brand}`} style={{textDecoration:"none"}}>  <Button variant="primary">Mroe Info</Button></Link>
          
         </Card.Body>
       </Card>

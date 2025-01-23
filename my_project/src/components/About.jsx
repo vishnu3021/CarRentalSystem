@@ -5,7 +5,8 @@ const About = () => {
   return (
     <div id='about'>
       <h1>About page</h1>
-      <CarsData/>
+      {/* <CarsData/> */}
+      <h1>about page</h1>
     </div>
   )
 }

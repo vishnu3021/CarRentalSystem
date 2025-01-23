@@ -1,6 +1,7 @@
 import React from 'react'
 import CarsData from '../Vechical/CarsData'
-import Homes from '../Home'
+import Homes from '../Home';
+import Ratingpage from '../RatingPage/Ratingpage'
 
 const Home = () => {
   return (
@@ -8,6 +9,7 @@ const Home = () => {
       <div id="home">
         <Homes/>
         <CarsData/>
+        <Ratingpage/>
       </div>
       
     
