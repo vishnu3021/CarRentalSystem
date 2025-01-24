@@ -20,10 +20,10 @@ function Home() {
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
-        <img className='d-block w-100 img'
+        <img className='d-block h-100  w-100 img'
         
           src="https://www.motortrend.com/uploads/2022/11/2024-audi-q8-sportback-front-three-quarter.jpg"
-          alt="Second slide"
+          alt="Second slide" height="10%"
         />
         <Carousel.Caption>
           <h5>Audi e-tron GT Concept</h5>
@@ -32,9 +32,9 @@ function Home() {
       </Carousel.Item>
       <Carousel.Item>
         <img
-          className="d-block w-100 img"
+          className="d-block h-100  w-100  img"
           src="https://www.teslarati.com/wp-content/uploads/2022/09/Tiago-EV-Charging-scaled.jpg"
-          alt="Third slide"
+          alt="Third slide" height="10%"
         />
         <Carousel.Caption>
           <h5>EV Vechile</h5>
